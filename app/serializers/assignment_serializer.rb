@@ -1,5 +1,5 @@
 class AssignmentSerializer < ActiveModel::Serializer
-  attributes :id, :person, :assignment_type
+  attributes :id, :person, :assignment_type, :meeting
 
   def person
     p = object.person

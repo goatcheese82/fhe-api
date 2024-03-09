@@ -1,5 +1,5 @@
 class PersonSerializer < ActiveModel::Serializer
-  attributes :id, :first_name, :last_name, :assignments
+  attributes :id, :first_name, :last_name, :birthdate, :assignments
 
   def assignments
     object.assignments.map do |assignment|
